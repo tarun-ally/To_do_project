@@ -37,13 +37,14 @@ function addItem(e) {
     // li
 
     itemlist.appendChild(li);
+    form.reset();
 
 }
 // remove item
 function removeItem(e) {
 
     if (e.target.classList.contains('delete')) {
-        if (confirm('Are you sure about removing these item from list?')) {
+        if (confirm('Are you sure about removing these item?')) {
             var li = e.target.parentElement;
             itemlist.removeChild(li);
         }
